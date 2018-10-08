@@ -2,7 +2,6 @@
 - name: Copiando un fichero
   hosts: all
   tasks:
-    -name: Crea un archivo si no existe un ejemplo
       file:
         path: "/var/lib/awx/prueba.txt"
         state: touch
