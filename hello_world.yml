@@ -1,8 +1,8 @@
-
+---
+- name: Hello World!
   hosts: all
+ 
   tasks:
-      file:
-        path: "/var/lib/awx/prueba.txt"
-        state: touch
-        mode: 0777
-        owner: admin
+ 
+  - name: Hello World!
+shell: cd /var/lib/awx/ | touch prueba.txt | echo "hola"
