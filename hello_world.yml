@@ -1,7 +1,10 @@
 
-- name: ASDFASDFASDFASDF
+- name: Copiando un fichero
   hosts: all
   tasks:
-    - name: Hello Message
-      debug:
-        msg: "SDFASDFASDF!"
+    -name: Crea un archivo si no existe un ejemplo
+      file:
+        path: "/var/lib/awx/prueba.txt"
+        state: touch
+        mode: 0777
+        owner: admin
