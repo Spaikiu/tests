@@ -1,5 +1,4 @@
 
-- name: Copiando un fichero
   hosts: all
   tasks:
       file:
